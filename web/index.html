@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Traffic signs</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        .container_fluid {
+            /* width: 90vh; */
+            height: 95vh;
+            background-color: #ccddff;
+        }
+        
+        .container_fluid1 {
+            /* width: 90vh; */
+            height: 45vh;
+            background-color: #ccddff;
+        }
+        
+        .cssFont {
+            font-size: 20px;
+            font-family: "arial,helvetica";
+        }
+        
+        .cssTitle {
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: "arial,helvetica";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_fluid">
+        <form action="/images/" method="post" enctype="multipart/form-data" id="road_sign_form" class="container_fluid1">
+            <center class="cssTitle">
+                Put a picture of a traffic sign here and I'll show you what kind of sign it is
+            </center><br/>
+            <p><input id="file" type="file" name="file" onchange="previewFile(this);" class="cssFont" required></p>
+            <div><img id="previewImage" src="/static/00001.png" style="width:200px;height:190px; " alt="Placeholder"></div>
+            <button type="submit" value="Submit">Summit</button></form>
+        <div class="cssFont">
+            <p>Your traffic sign is:</p>
+            <div id="result"></div>
+        </div>
+    </div>
+
+</body>
+
+<!-- Review anh -->
+<script>
+    function previewFile(input) {
+        var file = $("input[type=file]").get(0).files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function() {
+                $("#previewImage").attr("src", reader.result);
+            }
+            reader.readAsDataURL(file);
+        }
+    };
+</script>
+<!-- call api post -->
+<script>
+    $("#road_sign_form").submit(function(event) {
+            event.preventDefault();
+            let url = "http://127.0.0.1:8000/images/";
+            let formData = new FormData();
+            formData.append("file", file.files[0]);
+            fetch(url, {
+                method: "POST",
+                body: formData
+            }).then(data => {
+                data.json().then(text => {
+                    const res = document.getElementById('result');
+                    res.textContent = text['answer'];
+                }).catch("patser error");
+            }).catch("post error");
+        }
+
+    );
+</script>
+
+</html>

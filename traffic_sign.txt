@@ -1,0 +1,28 @@
+00001
+Biển số P.127 “Tốc độ tối đa cho phép 30km/h”, Biển có hiệu lực cấm các loại xe cơ giới chạy với tốc độ tối đa vượt quá trị số ghi trên biển trừ các xe được ưu tiên theo quy định.
+00003
+Biển số P.127 “Tốc độ tối đa cho phép 60km/h”, Biển có hiệu lực cấm các loại xe cơ giới chạy với tốc độ tối đa vượt quá trị số ghi trên biển trừ các xe được ưu tiên theo quy định.
+00005
+Biển số P.127 “Tốc độ tối đa cho phép 80km/h”, Biển có hiệu lực cấm các loại xe cơ giới chạy với tốc độ tối đa vượt quá trị số ghi trên biển trừ các xe được ưu tiên theo quy định.
+00006
+Biển số DP.134 “Hết hạn chế tốc độ tối đa cho phép (80km/h)”: Biển có giá trị báo cho người tham gia giao thông biết hiệu lực của biển số P.127 hết tác dụng.
+00007
+Biển số P.127 “Tốc độ tối đa cho phép 100km/h”, Biển có hiệu lực cấm các loại xe cơ giới chạy với tốc độ tối đa vượt quá trị số ghi trên biển trừ các xe được ưu tiên theo quy định.
+00009
+Biển số 125 “Cấm vượt”, báo cấm các loại xe cơ giới vượt nhau kể cả xe được ưu tiên theo quy định
+00011
+Biển số W.207 để báo trước sắp đến nơi giao nhau với đường không ưu tiên. Tại chỗ đường giao với các ngõ, ngách, hẻm hoặc tương tự để hạn chế tai nạn giao thông.
+00029
+Biển Cảnh báo nguy hiểm với phương tiện xe đạp
+00032
+Biển số DP.135 "Hết tất cả các lệnh cấm", Biển có giá trị báo hết đoạn đường mà nhiều biển báo cấm cùng hết hiệu lực.
+00033
+Biển số 301 “Các xe chỉ được rẽ phải”
+00034
+Biển số 301 “Các xe chỉ được rẽ trái”
+00035
+Biển số 301 “Các xe chỉ được đi thẳng”
+00036
+Biển số 301 “Các xe chỉ đi thẳng, rẽ phải”
+00038
+Biển số 302 “Hướng đi vòng chướng ngại vật sang phải”

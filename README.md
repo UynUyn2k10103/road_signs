@@ -1,3 +1,16 @@
+Cách 1:
+## create virtual environment
+python -m venv env
+.\env\Scripts\activate 
+## update pip (pip-22.0.4)
+python.exe -m pip install --upgrade pip 
+pip install -r requirements.txt
+
+## run app
+uvicorn main:app --reload
+
+
+Cách 2:
 ## create virtual environment
 python -m venv env
 .\env\Scripts\activate 

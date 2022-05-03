@@ -11,7 +11,7 @@ python.exe -m pip install --upgrade pip
 pip install -r requirement.txt
 
 ## run app
-uvicorn main:app --reload
+uvicorn main:app
 
 
 Cách 2:

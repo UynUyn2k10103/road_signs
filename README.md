@@ -8,7 +8,7 @@ python -m venv env
 ## update pip (pip-22.0.4)
 python.exe -m pip install --upgrade pip 
 
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 ## run app
 uvicorn main:app --reload
